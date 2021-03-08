@@ -9,74 +9,74 @@
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[BASE] = LAYOUT_ortho_4x12(
 		//BASE left										
-		KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T, 				//B
-															KC_Y, KC_U, KC_I, KC_O, KC_P, KC_BSPC, 
+		KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T, 				//BASE right
+										KC_Y, KC_U, KC_I, KC_O, KC_P, KC_BSPC, 
 		TT(1), KC_A, KC_S, KC_D, KC_F, KC_G, 
-															KC_H, KC_J, KC_K, KC_L, KC_SCLN, KC_QUOT, 
+										KC_H, KC_J, KC_K, KC_L, KC_SCLN, KC_QUOT, 
 		KC_LSFT, KC_Z, KC_X, KC_C, KC_V, KC_B, 
-															KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, KC_RSFT, 
+										KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, KC_RSFT, 
 		KC_LCTL, KC_LALT, KC_LGUI, TT(2), KC_NO, KC_SPC, 
-															KC_SPC, KC_NO, TT(3), RCTL_T(KC_DOWN), RALT_T(KC_UP), KC_ENT
+										KC_SPC, KC_NO, TT(3), RCTL_T(KC_DOWN), RALT_T(KC_UP), KC_ENT
 	),
 	
 	[SYMBOL] = LAYOUT_ortho_4x12(
 		//SYMBOL left
 		KC_GRV, KC_EXLM, KC_AT, KC_HASH, KC_DLR, 			//SYMBOL right
-															KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_DEL, 
+										KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_DEL, 
 		KC_TRNS, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, 
-															KC_NO, KC_NO, KC_UNDS, KC_LBRC, KC_RBRC, KC_BSLS, 
+										KC_NO, KC_NO, KC_UNDS, KC_LBRC, KC_RBRC, KC_BSLS, 
 		KC_LSFT, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, 
-															KC_NO, KC_NO, KC_NO, KC_LCBR, KC_RCBR, KC_RSFT, 
+										KC_NO, KC_NO, KC_NO, KC_LCBR, KC_RCBR, KC_RSFT, 
 		KC_TRNS, KC_TRNS, KC_TRNS, KC_NO, KC_NO, KC_SPC, 
-															KC_SPC, KC_NO, KC_WREF, KC_WBAK, KC_WFWD, KC_PENT
+										KC_SPC, KC_NO, KC_WREF, KC_WBAK, KC_WFWD, KC_PENT
 	),
 	
 	[FNUM] = LAYOUT_ortho_4x12(
 		//FN NUMPAD left
 		KC_ESC, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, 			//FM NUMPAD right
-															KC_P7, KC_P8, KC_P9, KC_BSPC, KC_UP, KC_DEL, 
+										KC_P7, KC_P8, KC_P9, KC_BSPC, KC_UP, KC_DEL, 
 		KC_CALC, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, 
-															KC_P4, KC_P5, KC_P6, KC_LEFT, KC_DOWN, KC_RGHT, 
+										KC_P4, KC_P5, KC_P6, KC_LEFT, KC_DOWN, KC_RGHT, 
 		KC_LSFT, KC_F11, KC_F12, KC_F13, KC_F14, KC_F15, 
-															KC_P1, KC_P2, KC_P3, KC_PSLS, KC_PAST, KC_EQL, 
+										KC_P1, KC_P2, KC_P3, KC_PSLS, KC_PAST, KC_EQL, 
 		KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_NO, KC_SPC, 
-															KC_P0, KC_NO, KC_PDOT, KC_PMNS, KC_PPLS, KC_PENT
+										KC_P0, KC_NO, KC_PDOT, KC_PMNS, KC_PPLS, KC_PENT
 	),
 	
 	[SYSTEM] = LAYOUT_ortho_4x12(
 		//SYSTEM left
 		KC_ESC, TO(4), KC_NO, KC_NO, KC_NO, KC_NO, 			//SYSTEM right
-															KC_PSCR, KC_HOME, KC_PGUP, KC_NO, KC_UP, KC_DEL, 
+										KC_PSCR, KC_HOME, KC_PGUP, KC_NO, KC_UP, KC_DEL, 
 		KC_NO, KC_NO, KC_NO, KC_NO, KC_SLEP, KC_NO, 
-															KC_NO, KC_END, KC_PGDN, KC_LEFT, KC_DOWN, KC_RGHT, 
+										KC_NO, KC_END, KC_PGDN, KC_LEFT, KC_DOWN, KC_RGHT, 
 		KC_LSFT, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, 
-															KC_MRWD, KC_MFFD, KC_MPLY, KC_MSTP, KC_MUTE, KC_RSFT, 
+										KC_MRWD, KC_MFFD, KC_MPLY, KC_MSTP, KC_MUTE, KC_RSFT, 
 		KC_TRNS, KC_TRNS, KC_TRNS, RCTL(RSFT(KC_ESC)), KC_NO, KC_NO, 
-															KC_FIND, KC_NO, KC_TRNS, KC_VOLD, KC_VOLU, KC_PENT
+										KC_FIND, KC_NO, KC_TRNS, KC_VOLD, KC_VOLU, KC_PENT
 	),
 	
 	[XCOM] = LAYOUT_ortho_4x12(
 		//XCOM left
 		KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T, 				//XCOM right
-															TO(0), TO(0), TO(0), TO(0), TO(0), TO(0), 
+										TO(0), TO(0), TO(0), TO(0), TO(0), TO(0), 
 		MO(5), KC_A, KC_S, KC_D, KC_F, KC_G, 
-															TO(0), TO(0), TO(0), TO(0), TO(0), TO(0), 
+										TO(0), TO(0), TO(0), TO(0), TO(0), TO(0), 
 		KC_LSFT, KC_NO, KC_NO, KC_NO, KC_C, KC_P, 
-															TO(0), TO(0), TO(0), TO(0), TO(0), TO(0), 
+										TO(0), TO(0), TO(0), TO(0), TO(0), TO(0), 
 		KC_LCTL, KC_LALT, KC_LGUI, MO(5), KC_NO, KC_SPC, 
-															TO(0), KC_NO, TO(0), TO(0), TO(0), TO(0)
+										TO(0), KC_NO, TO(0), TO(0), TO(0), TO(0)
 	),
 	
 	[XNUM] = LAYOUT_ortho_4x12(
 		//XCOM NUMS left
 		KC_ESC, KC_1, KC_2, KC_3, KC_4, KC_5, 				//XCOM NUMS right
-															KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, 
+										KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, 
 		KC_TRNS, KC_6, KC_7, KC_8, KC_9, KC_0, 
-															KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, 
+										KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, 
 		KC_LSFT, KC_BSPC, KC_NO, KC_NO, KC_NO, KC_NO, 
-															KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, 
+										KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, 
 		KC_LCTL, KC_LALT, KC_LGUI, KC_TRNS, KC_NO, KC_SPC, 
-															KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO
+										KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO
 	),
 };
 
@@ -306,7 +306,7 @@ static void render_anim_xcom(void) {
 	animation_run();
 }
 
-//Registers each keystroke
+//Registers each keystroke to wake screen
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   switch (keycode) {
     default:
